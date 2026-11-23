@@ -1,0 +1,26 @@
+{
+ "ts": "2026-11-23T11:42:29Z",
+ "pass": true,
+ "login": {
+  "user": "cs_snf-00",
+  "server": "10.42.104"
+ },
+ "ident": [
+  {
+   "U": "cs_snf-00",
+   "R": "cs_snf-role-00",
+   "RG": "AWS_US_WEST_2",
+   "A": "YHA97514"
+  }
+ ],
+ "call1": [
+  {
+   "R": "OPC55-RETEST"
+  }
+ ],
+ "call2": [
+  {
+   "R": "391"
+  }
+ ]
+}

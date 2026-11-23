@@ -1,0 +1,18 @@
+{
+ "claude-opus-5-5": "OK: OK",
+ "claude-opus-4-6": "OK: OK",
+ "claude-opus-4-5": "OK: OK",
+ "claude-sonnet-4-5": "OK: OK",
+ "claude-haiku-4-5": "OK: OK",
+ "claude-3-5-sonnet": "ERR Request failed for external function COMPLETE with remote service error: '400 'u",
+ "claude-4-sonnet": "ERR Request failed for external function COMPLETE with remote service error: '400 'u",
+ "claude-sonnet-4-6": "OK: OK",
+ "openai-gpt-5-2": "ERR Not authorized to access model. Your role does not have access to any of the fol",
+ "openai-gpt-4.1": "OK: OK",
+ "gemini-3-pro": "ERR Request failed for external function COMPLETE with remote service error: '400 'u",
+ "gemini-2.5-pro": "ERR Not authorized to access model. Your role does not have access to any of the fol",
+ "llama3.1-70b": "OK: OK",
+ "mistral-large2": "OK:  OK",
+ "snowflake-arctic": "ERR Request failed for external function COMPLETE with remote service error: '400 'u",
+ "deepseek-r1": "ERR Request failed for external function COMPLETE$V6 with remote service error: 400 "
+}
