@@ -57,6 +57,19 @@ curl -s localhost:8088/v1/messages -H 'content-type: application/json' -d '{
 
 Point any OpenAI client at `http://127.0.0.1:8088/v1` with a dummy key.
 
+## Deployed instance
+
+`https://dextapi.lol/snowflake-cortex/v1` — systemd `snowflake-cortex.service`
+on 127.0.0.1:18089, published through openresty, `GATEWAY_KEY` required
+(`Authorization: Bearer <key>` or `x-api-key`).
+
+```bash
+curl -s https://dextapi.lol/snowflake-cortex/v1/models -H 'Authorization: Bearer $KEY'
+```
+
+Service ops on 169: `systemctl status|restart snowflake-cortex`,
+`journalctl -u snowflake-cortex -f`.
+
 ## Model availability
 
 Accessible: `claude-opus-5-5`, `claude-opus-4-6`, `claude-sonnet-4-6`, `claude-opus-4-5`,
