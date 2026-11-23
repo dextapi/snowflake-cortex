@@ -151,6 +151,10 @@ def anth_text(content):
 
 # ---------- HTTP ----------
 
+def _norm(k):
+    return k[3:] if k.startswith("sk-") else k
+
+
 def sse(obj):
     return ("data: " + json.dumps(obj, ensure_ascii=False) + "\n\n").encode()
 
@@ -178,7 +182,7 @@ class Handler(BaseHTTPRequestHandler):
         if not GATEWAY_KEY:
             return True
         got = self.headers.get("Authorization", "").replace("Bearer ", "").strip()
-        if got == GATEWAY_KEY:
+        if _norm(got) == _norm(GATEWAY_KEY):
             return True
         if self.headers.get("x-api-key") == GATEWAY_KEY:
             return True

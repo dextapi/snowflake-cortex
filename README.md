@@ -61,7 +61,7 @@ Point any OpenAI client at `http://127.0.0.1:8088/v1` with a dummy key.
 
 `https://dextapi.lol/snowflake-cortex/v1` — systemd `snowflake-cortex.service`
 on 127.0.0.1:18089, published through openresty, `GATEWAY_KEY` required
-(`Authorization: Bearer <key>` or `x-api-key`).
+(`Authorization: Bearer sk-<key>` or `x-api-key`).
 
 ```bash
 curl -s https://dextapi.lol/snowflake-cortex/v1/models -H 'Authorization: Bearer $KEY'
